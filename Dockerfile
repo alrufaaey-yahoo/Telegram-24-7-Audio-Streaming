@@ -11,4 +11,4 @@ COPY quran.mp3 playlist.txt /app/
 WORKDIR /app 
 
 # Start the FFmpeg stream
-CMD ["ffmpeg", "-re", "-stream_loop", "-1", "-i", "https://server8.mp3quran.net/download/frs_a/002.mp3", "-c:a", "aac", "-f", "flv", "rtmps://dc4-1.rtmp.t.me/s/2519683084:WtASbEKfu1AWCSWEo94cgA"]
+CMD ["ffmpeg", "-re", "-stream_loop", "-1", "-i", "https://server8.mp3quran.net/download/frs_a/002.mp3", "-c:a", "aac", "-b:a", "128k", "-ac", "2", "-ar", "44100", "-f", "flv", "-flvflags", "no_duration_filesize", "rtmps://dc4-1.rtmp.t.me/s/2519683084:WtASbEKfu1AWCSWEo94cgA"]
