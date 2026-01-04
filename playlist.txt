@@ -1,1 +1,1 @@
-file 'quran.mp3'
+file 'https://server8.mp3quran.net/download/frs_a/002.mp3'
